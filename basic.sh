@@ -3,17 +3,24 @@
 varname="Dung"
 echo "$varname or ${varname}"
 
+
+shell execute
+`cmd` or $(cmd)
+
 nen dung -> ""
 
+
+INT
 int dung: (()), []
 if ((int,<,<=,>,>=)), if [-eq,-ne,-lt,le,-gt,-ge ]
 -o=or
 -a=and
 ! phu dinh
 
+
+STRING
 muon +,-,*,/, %... phai co: let z=a*b or them $[5+3]
 string dung: [[]], []
-
 
 if [[string, <,>]], 
 if [=, ==, !=]

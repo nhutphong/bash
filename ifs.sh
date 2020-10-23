@@ -12,12 +12,19 @@ IFS=OLD_IFS
 
 cd /root/Desktop
 
+
+# function
+myfunc() {
+    echo "hello $1"
+}
+
 #doc file dung while read
 while_read_line(){
 	while read line; do
 		echo $line
 	done < test_1.txt
 }
+
 
 OLD_IFS=IFS
 IFS="\n"
@@ -28,6 +35,7 @@ cmd_read_line(){
 	done
 }
 cmd_read_line
+
 
 IFS=OLD_IFS
 
