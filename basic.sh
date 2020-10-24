@@ -10,9 +10,37 @@ shell execute
 nen dung -> ""
 
 
+FUNCTION
+variable trong func la global=toan_cuc
+
+my_function () {
+  func_result="some result"
+}
+
+my_function
+echo $func_result
+
+
+my_function () {
+  local info="$0 $1 $2 $3"
+  echo "$info"
+}
+
+func_result="$(my_function nguyen chi thong)"
+echo $func_result
+
+${varname} or $varname
+$(function p1, p2, p3 ...)
+
+
 INT
 int dung: (()), []
 if ((int,<,<=,>,>=)), if [-eq,-ne,-lt,le,-gt,-ge ]
+
+express
+$((3+4))
+$[3+4]
+
 -o=or
 -a=and
 ! phu dinh
@@ -35,6 +63,46 @@ if [-z $1] : neu param 1 khong ton tai thi run(condition)
 for folder in `ls`;do;done
 for folder in $(ls);do;done
 
+
+
+
+khi muon lay value cua var thi dung name=$var
+`ls` <=> $(ls) <=> <$(cmd)>
+
+operator
+echo `expr 2 + 2` #phai co space
+`expr $a \* $b` #phep nhan
+[ $a -gt 10 ] # co  khoang 1 space [<space>$a -ge 10<space>]
+(( $a > 10 )) ; (( a++ )) <=>  a=$(($a + 1))
+a=$((3+1)); #a=4
+b=$[4+5]; #b=9
+((a++))
+
+unset var; #delete var
+
+int dung: if (( 3>4 )), if [ 8 -lt 10 ] <=> [ -le, ge,.., ] chi dung duoc cho int
+if ((int,<,<=,>,>=)), if [ -eq,-ne,-lt,le,-gt,-ge ]
+
+-o =or
+-a =and
+!  phu dinh
+
+muon +,-,*,/, %... phai co: let z=a*b or them $[5+3]
+string dung: [[]], []
+
+if [[ -lt, -le,.., <, <=, >, ... ]] dung cho ca int va string
+string &&, || <=> and, or
+if [[string, <,>]], if [=, ==, !=] 
+option: -z string la null
+-f: la file, -d: la directory
+if [-z $1] : neu param 1 khong ton tai thi run(condition)
+
+array=(nhut phong hanh tan) or names=("thanh phong" "tan heo" "chi thong")
+${array[@]} -> full array
+${#array[@]} -> len array
+
+
+=========================================================================
 
 echo 'Hello bash scripts'
 
@@ -114,8 +182,6 @@ echo ${name,,} => lowercase
 echo ${name^^} => uppercasek
 
 =========================================================================
-
-variable trong func la global=toan_cuc
 
 change default shell=command:
 chsh -s $(which bash)
