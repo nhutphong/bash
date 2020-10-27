@@ -1,0 +1,18 @@
+#os
+alias cai='sudo apt install -y'
+alias fix='sudo apt --fix-broken install -y'
+alias up='sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y'
+alias upfull='sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoremove -y'
+
+
+#python
+alias pipl='pip3 list'
+alias piplo='pip3 list -o'
+alias pipiu='pip3 install --user'
+alias pipiuu='pip3 install --user -U'
+
+
+# ibus
+export GTK_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+export QT_IM_MODULE=ibus

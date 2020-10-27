@@ -9,6 +9,9 @@ shell execute
 
 nen dung -> ""
 
+${varname::5} -> dung slice(0,5)
+${varname, ...} -> more syntax manh me
+
 
 FUNCTION
 variable trong func la global=toan_cuc
@@ -64,8 +67,6 @@ for folder in `ls`;do;done
 for folder in $(ls);do;done
 
 
-
-
 khi muon lay value cua var thi dung name=$var
 `ls` <=> $(ls) <=> <$(cmd)>
 
@@ -77,6 +78,13 @@ echo `expr 2 + 2` #phai co space
 a=$((3+1)); #a=4
 b=$[4+5]; #b=9
 ((a++))
+
+
+{1..10} -> range(1,11)
+{1..10..2} range(1,11,2)
+{1..1}_{a..c} => 2 range() 2 for long nhau
+(seq 1 10) -> range(1,11)
+
 
 unset var; #delete var
 
@@ -205,7 +213,7 @@ export giong alias
 $? = 0
 [...]:
 *: bat ky lay nhieu
-$(seq 1 10)
+
 [A-Za-z]: lam viec voi file and dir
 [xyz]*: char bat dau = x or y or z
 [!]: phu dinh
