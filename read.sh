@@ -28,5 +28,40 @@ done
 read "username?What your name ? "
 echo $username
 
-read -s "pass? password: "
+read -s "pass?password: "
 echo $pass
+
+
+# IFS=' ' la sep giua cac args $*
+IFS='-'
+
+echo "Hello World"
+echo "$0"
+echo "$1"
+
+echo acong: $@
+echo thang=count: $#
+echo nhan: $*
+echo underscore arg cuoi: $_
+
+print acong: "$@" # array[args, ...]
+print "IFS: $IFS"
+print nhan: "$*" # bi anh huong boi $IFS = ' '
+print $$
+
+arr="$@"
+str="$*"
+
+for item in $@
+do
+	echo arr: $item
+
+done
+
+echo 
+
+for letter in $*
+do
+	echo str: $letter
+
+done
