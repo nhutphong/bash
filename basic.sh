@@ -4,6 +4,18 @@ varname="Dung"
 echo "$varname or ${varname}"
 
 
+expression='la code binh thuong'
+
+((expression))
+((a=3+4))
+
+let "expression"
+let "name='nguyen thanh dung'"
+
+echo a{b,c,d}e
+abe ace ade
+
+
 shell execute
 `cmd` or $(cmd)
 
@@ -40,7 +52,8 @@ INT
 int dung: (()), []
 if ((int,<,<=,>,>=)), if [-eq,-ne,-lt,le,-gt,-ge ]
 
-express
+
+expression
 $((3+4))
 $[3+4]
 

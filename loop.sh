@@ -1,35 +1,47 @@
-!/bin/bash
+#! /usr/bin/zsh
 
 # function
 greeting() {
-  echo "Hello $1"
+  echo -e "tao la funciton greeting \$1=$1 "
 }
 greeting "Joe" # truyen argument=$1 cho function
+
 echo
-select_do_done(){
-    select DRINK in tea cofee water juice appe all none
+
+echo "func_select_do_done -> khoi select tao loop vo tan; neu ko gap break"
+func_select_do_done(){
+    select DRINK in tea cofee water juice apple all exit
     do
  
         case $DRINK in
-        tea|cofee|water|all)
-            echo "Go to canteen"
+        tea|cofee|water|all) # in 1
+            echo "ttea|cofee|water|all"
             ;;
-        juice|appe)
-            echo "Available at home"
+
+        juice|apple) # in 2
+            echo "joice|apple"
             ;;
-        none)
-            break
+
+        exit) # in 3
+            echo "exit ban da gap break"
+            break # exit select
             ;;
-        *) echo "ERROR: Invalid selection"
+
+        *) #others
+            echo "ERROR: Invalid selection"
             ;;
+
         esac
  
     done
     #loop vo tan
 }
 
+func_select_do_done
 
-echo "TAO LA case esac"
+echo
+
+echo "TAO LA: case esac"
 case "$1" in
    1) echo 'Monday' ;;
    2) echo 'Tuesday' ;;
@@ -43,6 +55,7 @@ case "$1" in
 #    exit 1 #thoat shell
 ;;
 esac
+
 echo -e
 
 
@@ -51,30 +64,37 @@ echo -e
 #    echo ${array[$i]}
 # done
 
-echo "TAO LA for"
+echo "TAO LA: for var in Mon Tue Wed Thurs Fri Sat Sun"
 for var in Mon Tue Wed Thurs Fri Sat Sun
 do
    echo $var
 done
+
 echo -e
 
-echo "tao la for $1"
+
+echo "tao la: for item in {1..5}"
 for item in {1..5}; do
     echo $item
 done
+
 echo -e
 
-echo "TAO LA while -le"
+
+echo "TAO LA: while [ $a -le 5 ]"
 a=0
 while [ $a -le 5 ]
 do
    echo $a
-#    ((a++))
-   a=$(($a + 1))
+   ((a++))
+   # a=$(($a + 1))
 done
+
+
 echo -e
 
-echo "TAO LA until [ o -gt 5 ]; condition=false run do;done"
+
+echo "TAO LA: until [ o -gt 5 ]; condition=false run do;done"
 a=0
 until [ $a -gt 5 ] # condition= false thi run do;done
 do
