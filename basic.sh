@@ -118,10 +118,15 @@ option: -z string la null
 -f: la file, -d: la directory
 if [-z $1] : neu param 1 khong ton tai thi run(condition)
 
-array=(nhut phong hanh tan) or names=("thanh phong" "tan heo" "chi thong")
+
+# array=list
+array=(nhut phong hanh tan cho trau) or names=("thanh phong" "tan heo" "chi thong")
+ 
+${array[*]} -> full array
 ${array[@]} -> full array
 ${#array[@]} -> len array
-
+${#array[@]:2:3} -> len array => hanh tan cho
+for index in "${!my_array[@]}"; do echo "$index"; done # dung bash no zsh !arr
 
 =========================================================================
 
