@@ -1,4 +1,4 @@
-#! /usr/bin/zsh
+#!/usr/bin/zsh
 
 #sudo apt install -y kali-defaults kali-root-login desktop-base kde-plasma-desktop kwrite dolphin
 
