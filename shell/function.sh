@@ -1,4 +1,8 @@
-#!/usr/bin/zsh
+#! /usr/bin/zsh
+
+
+# run  demo.sh trong file chua no, ko can set chmod
+source demo.sh
 
 
 cal
@@ -19,6 +23,10 @@ chgrp
 
 ps
 top
+
+
+mkdir new_folder
+mkdir -p path/to/subfolder
 
 
 open file in terminal:

@@ -3,6 +3,8 @@
 varname="Dung"
 echo "$varname or ${varname}"
 
+unset varname # delete varname
+
 
 expression='la code binh thuong'
 
