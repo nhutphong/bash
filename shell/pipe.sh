@@ -34,23 +34,26 @@ STOP
 
 
 output_cmd vao file
-cmd > file
-cmd 1> file
+cmd > out.log # output vao out.log
+cmd 1> out.log # output vao out.log
+
+cmd > out.log 2>&1 # error vao out.log
 
 
 stdout vao stderr vao out.log
 cmd > out.log 2> out.log
 cmd 1> out.log 2> out.log
-cmd > out.log 2>&1
+
+
 cmd > /dev/null 2>&1
 
 
 ls -l video.mpg blah.foo > myoutput 2>&1
-&> file_name => stdout and stderr vao file_name
+ls &> file_name => stdout and stderr vao file_name
 
 
->&1 => output tranh tao file
->&2 => output tranh tao file
+ls 2>&1 => error_ls vao out_ls chinh no ko tao file
+ls >&2 => output tranh tao file 
 
 
 echo "xin cho linux" >> file_name(append content)
