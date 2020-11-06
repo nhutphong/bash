@@ -168,6 +168,9 @@ array
 ? => ky tu dac biet
 * => tu 2 letter tro len
 
+
+
+string va array default index=1
 array=('thanh tan' 'thanh phong' 'ngoc hanh' 'dung cau')
 # dung slice cho array and string => ${name[@]:1:3} => pos 1 lay 3 phan tu
 # or ${name[*]:2} => tu pos 2 lay full_string
