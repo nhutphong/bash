@@ -39,6 +39,7 @@ echo $func_result
 
 
 my_function () {
+  # $0=func_name
   local info="$0 $1 $2 $3"
   echo "$info"
 }
