@@ -23,7 +23,7 @@ set -eu -o pipefail # -o pipefail == add them pipefail
 
 variable="one two three four five"
 set -- $variable # -- ko co options thi dung
-ta có 
+ta có arguments đc gán các values của $variable
 $1=one, $2=two , $3=three, ...
 
 
