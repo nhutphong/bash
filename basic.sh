@@ -34,6 +34,7 @@ my_function () {
   func_result="some result"
 }
 
+#call func
 my_function
 echo $func_result
 
@@ -44,6 +45,7 @@ my_function () {
   echo "$info"
 }
 
+#call func with 3 parameters
 func_result="$(my_function nguyen chi thong)"
 echo $func_result
 
