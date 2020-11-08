@@ -1,5 +1,16 @@
 #! bin/bash
 
+quan trong
+shell execute
+`cmd=expression` or $(cmd=expression)
+
+`code func_name or cac built-in function bash
+  or $var="fun_name or built-in"
+  expression
+`
+$(cmd=expression)
+
+
 varname="Dung"
 echo "$varname or ${varname}"
 
@@ -18,8 +29,6 @@ echo a{b,c,d}e
 abe ace ade
 
 
-shell execute
-`cmd` or $(cmd)
 
 nen dung -> ""
 
@@ -53,6 +62,18 @@ echo $func_result
 
 ${varname} or $varname
 $(function p1, p2, p3 ...)
+
+my_function(){
+  echo "nguyen A"
+  echo "duong ZZZ"
+  echo "tran WWW"
+  "moi 1 echo la 1 return=giong yield python
+  yield + space + yield + space yield
+
+  "
+}
+values=`my_function` == "nguyen A duong ZZZ tran WWW"
+
 
 $@ == $*
 
@@ -290,4 +311,3 @@ trap [cmd] [SIGNALS]
 /bin
 /etc
 /etc/shells
-
