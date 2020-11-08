@@ -30,6 +30,7 @@ ${varname, ...} -> more syntax manh me
 FUNCTION
 variable trong func la global=toan_cuc
 
+# defined
 my_function () {
   func_result="some result"
 }
@@ -41,6 +42,7 @@ echo $func_result
 
 my_function () {
   # $0=func_name
+  # dung local var send value toi echo, de lam return cho func
   local info="$0 $1 $2 $3"
   echo "$info"
 }
@@ -51,6 +53,11 @@ echo $func_result
 
 ${varname} or $varname
 $(function p1, p2, p3 ...)
+
+$@ == $*
+
+"$*" -> "$1 $2 $n" bi anh huong boi IFS
+"$@" -> "$1" "$2" "$n"
 
 
 INT
