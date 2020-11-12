@@ -58,15 +58,20 @@ my_function () {
 
 #call func with 3 parameters
 func_result="$(my_function nguyen chi thong)"
+or dùng backtick=``
+values=`my_func cho bo trau`
 echo $func_result
+
+func1 func2
+"fucn2" là string arg1 của func1
 
 ${varname} or $varname
 $(function p1, p2, p3 ...)
 
 my_function(){
-  echo "nguyen A"
-  echo "duong ZZZ"
-  echo "tran WWW"
+  echo "nguyen A" <=> yield "nguyen A"
+  echo "duong ZZZ" <=> yield "duong ZZZ"
+  echo "tran WWW" <=> yield "tran WWW"
   "moi 1 echo la 1 return=giong yield python
   yield + space + yield + space yield
 
