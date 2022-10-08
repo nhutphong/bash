@@ -46,7 +46,11 @@ cp folder1 folder2/
 mv folder3 folder4/		#move folder3 vao folder4
 mv folder3 folder4		#rename folder3 thanh folder4
 
+cat file 			# xem file tren xuong
+tac file 			# xem file duoi len
 
+more file 			# mo file_lon theo page
+less file 			# nhieu tinh nang hon cmd more
 
 # filter
 head -3 file.txt 	# read 3 line first, left to right
@@ -68,6 +72,9 @@ grep "tip.sh" file1 file2			# search multi files
 
 egrep 'tip' file
 
+awk
+sed
+
 #process management
 top
 ps aux | grep 'firefox'
@@ -78,6 +85,22 @@ selep 15 &		# 5 giay dettach terminal
 jobs			# show list job
 fg %1 			# attach job1 into terminal
 
+
+cal
+ncal
+time
+date
+time
+times
+
+who
+
+nc
+nmap
+
+users
+chgrp
+passwd
 
 comment
 
