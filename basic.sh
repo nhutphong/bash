@@ -1,19 +1,5 @@
 #! bin/bash
 
-quan trong
-shell execute
-`cmd=expression` or $(cmd=expression)
-
-`code func_name or cac built-in function bash
-  or $var="fun_name or built-in"
-  expression
-`
-$(cmd=expression)
-
-
-varname="Dung"
-echo "$varname or ${varname}"
-
 unset varname # delete varname
 
 

@@ -1,0 +1,15 @@
+bash_slice.sh one two three
+basic.sh four five
+clock.sh
+file.txt
+function.sh
+general.sh
+ifs.sh
+loop.sh
+README.md
+read.sh
+redirection.sh
+shell
+slice.sh
+tip.sh
+zsh_slice.sh

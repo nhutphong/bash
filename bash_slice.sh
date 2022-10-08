@@ -6,7 +6,6 @@ arr=("thanh phong" "dung cau")
 for words in ${arr[@]}
 do
     echo $words
-
 done
 
 
