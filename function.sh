@@ -9,6 +9,8 @@ func_one(){
 }
 
 func_two(){
+    #echo == yield python
+
     echo "arg1 = " $1
     echo "arg2 = " $2
     echo "arg3 = " $3
