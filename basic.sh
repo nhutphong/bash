@@ -232,7 +232,7 @@ echo {1..100..3}
 seq 1 $1 => for i in  $(seq 1 3 $1) => chi dung cho int
 name='vo thanh phong'
 echo ${name,,} => lowercase
-echo ${name^^} => uppercasek
+echo ${name^^} => uppercase
 
 =========================================================================
 

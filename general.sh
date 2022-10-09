@@ -12,6 +12,21 @@
 	 	bash file.sh
 	 	sh file.sh
 	 	zsh file.sh
+
+$(cmd)
+`cmd`	#backtic
+
+${varname}
+$varname
+
+((a++))
+((c=4+5))
+$a
+$c
+
+[[ condition ]]
+[]
+
 comment
 
 NAME="John"

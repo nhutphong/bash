@@ -35,7 +35,8 @@ command: xem thong tin cu the,
 
 cd Desktop/ # jumpto Desktop/
 pwd # show workdir=folder dang lam viec
-ls #show files, folders, ...
+ls  #show files, folders, ...
+du 	#show hidden folders
 
 #create del file, folder
 touch file.txt
@@ -93,6 +94,12 @@ date
 time
 times
 
+type cmd 	#
+which cmd 	#show path command
+apropos
+whatis cmd
+alias
+unalias
 who
 
 nc

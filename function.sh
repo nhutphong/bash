@@ -4,8 +4,8 @@
 
 
 func_one(){
-    echo "nguyen thanh dung" # 3 argument
-    echo "nguyen chi thong cau" # 4 argument
+    echo "nguyen thanh dung" # 3 arguments
+    echo "nguyen chi thong cau" # 4 argumentss
 }
 
 func_two(){

@@ -8,21 +8,21 @@ greeting "Joe" # truyen argument=$1 cho function
 
 echo
 
-echo "func_select_do_done -> khoi select tao loop vo tan; neu ko gap break"
+echo "func_select_do_done -> select 1 to 6 or 7=exit"
 func_select_do_done(){
     select DRINK in tea cofee water juice apple all exit
     do
  
         case $DRINK in
-        tea|cofee|water|all) # in 1
+        tea|cofee|water|all) # in 1 2 3 6
             echo "ttea|cofee|water|all"
             ;;
 
-        juice|apple) # in 2
+        juice|apple) # in  4 5
             echo "joice|apple"
             ;;
 
-        exit) # in 3
+        exit) # in 7
             echo "exit ban da gap break"
             break # exit select
             ;;
@@ -81,9 +81,9 @@ done
 echo -e
 
 
-echo "TAO LA: while [ $a -le 5 ]"
+echo "TAO LA: while [[ $a -le 5 ]]"
 a=0
-while [ $a -le 5 ]
+while [[ $a -le 5 ]]
 do
    echo $a
    ((a++))
@@ -94,10 +94,17 @@ done
 echo -e
 
 
-echo "TAO LA: until [ o -gt 5 ]; condition=false run do;done"
+echo "TAO LA: until [[ o -gt 5 ]]; condition=false run do;done"
 a=0
-until [ $a -gt 5 ] # condition= false thi run do;done
+until [[ $a -gt 5 ]] # condition= false thi run do;done
 do
    echo $a
    ((a++))
+done
+
+echo
+
+echo "for in"
+for ((i = 0 ; i < 10 ; i++)); do
+  echo $i
 done
