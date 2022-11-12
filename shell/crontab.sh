@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+#!/usr/bin/bash
 
 crontab -u username -e # tạo hoặc sửa file crontab cua other user
 

@@ -1,4 +1,4 @@
-#! /usr/bin/bash
+#!/usr/bin/bash
 
 :<<"comment"
 ls >file.txt == ls 1>file.txt

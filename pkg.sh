@@ -1,4 +1,4 @@
-#! /usr/bin/zsh
+#!/usr/bin/bash
 
 for item in {one,two,three}
 do

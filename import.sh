@@ -1,4 +1,4 @@
-#! /usr/bin/zsh
+#!/usr/bin/bash
 
 # source == import
 source ./pkg.sh

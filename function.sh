@@ -1,4 +1,4 @@
-#! /usr/bin/bash
+#!/usr/bin/bash
 
 # call func_name khong can dau ngoac tron
 # func_name arg1 arg2 arg3 ...
