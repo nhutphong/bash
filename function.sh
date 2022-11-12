@@ -1,11 +1,12 @@
 #! /usr/bin/bash
 
+# call func_name khong can dau ngoac tron
 # func_name arg1 arg2 arg3 ...
 
 
 func_one(){
-    echo "nguyen thanh dung" # 3 arguments
-    echo "nguyen chi thong cau" # 4 argumentss
+    echo "one two three" # 3 arguments
+    echo "four five six seven" # 4 argumentss
 }
 
 func_two(){

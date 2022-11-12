@@ -1,6 +1,6 @@
 #! /usr/bin/bash
 
-:<<"comment"
+: '
  run file .sh: 
 	 1 set chmod permission cho file
 	 	chmod 755 file.sh
@@ -13,8 +13,18 @@
 	 	sh file.sh
 	 	zsh file.sh
 
+let "name='nguyen thong dung'" 
+echo $name
+unset name #del name
+
+echo a{b,c,d}e
+# abe ace ade
+
 $(cmd)
 `cmd`	#backtic
+vd:
+  $(echo haha)
+  'ls -l'
 
 ${varname}
 $varname
@@ -24,10 +34,27 @@ $varname
 $a
 $c
 
-[[ condition ]]
-[]
+nen dung double brackets
+[[ condition for string vs int, co the dung regex ]]:
+	[[ $var1 == "regex"]]
+	[[ $var1 =~ "regex"]]
+	!=, <, > 
 
-comment
+
+[ condition for int]:
+	[ num1 -eq num2 ]
+	-ge, -gt, -le, -lt, -ne
+	==, !=, 
+
+	(( $num1 < $num2 ))
+	<=, >, >=
+
+[operator file1]:
+operator:
+	-e	true if file ton tai
+	...
+'
+# end comment multiple
 
 NAME="John"
 echo "Hello $NAME!"
@@ -39,8 +66,8 @@ echo "${NAME}!"
 
 #phai dung double quotes
 NAME="John"
-echo "Hi $NAME"  #=> Hi John
-echo 'Hi $NAME'  #=> Hi $NAME
+echo "Hi $NAME"  # Hi John
+echo 'Hi $NAME'  # Hi $NAME
 
 #shell execution
 echo "I'm in $(pwd)" # $(command)
